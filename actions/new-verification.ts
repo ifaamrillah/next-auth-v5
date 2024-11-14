@@ -24,7 +24,7 @@ export default async function newVerification(token: string) {
     },
   });
 
-  await db.vericiationToken.delete({
+  await db.verificationToken.delete({
     where: {
       id: existingToken.id,
     },

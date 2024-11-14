@@ -48,7 +48,7 @@ model Account {
   @@unique([provider, providerAccountId])
 }
 
-model VericiationToken {
+model VerificationToken {
   id String @id @default(cuid())
   email String
   token String @unique
